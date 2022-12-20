@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.InicioFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Módulos de Información"
+                android:textAlignment="center"
+                android:textColor="@color/gob_green_light"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modulos_cmi"
+                android:textColor="@color/gob_green_light"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="9dp"
+                android:justificationMode="inter_word"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="40dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="@color/gob_transparente"
+                        app:strokeWidth="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="8dp"
+                                android:src="@drawable/modulo1_a" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:text="Módulo I"
+                                android:textAlignment="center"
+                                android:textColor="@color/gob_green_light"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="110dp"
+                                        android:justificationMode="inter_word"
+                                        android:paddingLeft="8dp"
+                                        android:paddingTop="8dp"
+                                        android:paddingRight="8dp"
+                                        android:text="@string/info_modulo_I"
+                                        android:textColor="@color/gob_green_light"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </ScrollView>
+
+                            <Button
+                                android:id="@+id/botonModuloI"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/white"
+                                android:text="Ver"
+                                android:textColor="@color/gob_pink"
+                                android:textSize="8sp"
+                                app:strokeColor="@color/gob_pink"
+                                app:strokeWidth="2dp" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="240dp"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="@color/gob_transparente"
+                        app:strokeWidth="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="8dp"
+                                android:src="@drawable/modulo1_b" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:text="Módulo II"
+                                android:textAlignment="center"
+                                android:textColor="@color/gob_green_light"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="110dp"
+                                        android:justificationMode="inter_word"
+                                        android:paddingLeft="8dp"
+                                        android:paddingTop="8dp"
+                                        android:paddingRight="8dp"
+                                        android:text="@string/info_modulo_II"
+                                        android:textColor="@color/gob_green_light"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </ScrollView>
+
+                            <Button
+                                android:id="@+id/botonModuloII"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/white"
+                                android:text="Ver"
+                                android:textColor="@color/gob_pink"
+                                android:textSize="8sp"
+                                app:strokeColor="@color/gob_pink"
+                                app:strokeWidth="2dp" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="240dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="10dp"
+                        app:strokeColor="@color/gob_transparente"
+                        app:strokeWidth="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingTop="8dp"
+                                android:src="@drawable/modulo1_c" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:text="Módulo III"
+                                android:textAlignment="center"
+                                android:textColor="@color/gob_green_light"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="110dp"
+                                        android:justificationMode="inter_word"
+                                        android:paddingLeft="8dp"
+                                        android:paddingTop="8dp"
+                                        android:paddingRight="8dp"
+                                        android:text="@string/info_modulo_III"
+                                        android:textColor="@color/gob_green_light"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </ScrollView>
+
+                            <Button
+                                android:id="@+id/botonModuloIII"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/white"
+                                android:text="Ver"
+                                android:textColor="@color/gob_pink"
+                                android:textSize="8sp"
+                                app:strokeColor="@color/gob_pink"
+                                app:strokeWidth="2dp" />
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
